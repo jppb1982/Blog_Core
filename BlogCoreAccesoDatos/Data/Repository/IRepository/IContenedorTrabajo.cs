@@ -10,7 +10,7 @@ namespace BlogCore.AccesoDatos.Data.Repository.IRepository
     {
         //Aqui se deben ir agregando los diferenteas repositorios
         ICategoriaRepository Categoria { get; }
-        //IArticuloRepository Articulo { get; }
+        IArticuloRepository Articulo { get; }
         void Save();
 
     }
