@@ -9,7 +9,7 @@
 
 <h3 class="text-center">Crear un nuevo Artículo</h3>
 
-<form method="post" asp-action="Create">
+<form method="post" asp-action="Create" enctype="multipart/form-data">
     <div class="row px-2 offset-1 border">
         <div asp-validation-summary="All" class="text-danger"></div>
 
@@ -53,6 +53,19 @@
                     <span asp-validation-for="Articulo.CategoriaId" class="text-bg-danger"></span>
                 </div>
             </div>
+            
+            <br />
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Articulo.URLImagen"></label>
+                </div>
+                <div class="col-8">
+                    <input type="file" name="archivos" id="subidaArchivo" class="form-control"  />
+                    <span asp-validation-for="Articulo.URLImagen" class="text-danger"></span>
+                </div>
+            </div>
+
             <br />
 
             <div class="form-group-row">

@@ -28,7 +28,7 @@ namespace BlogCore.Areas.Admin.Controllers
                 Articulo = new Articulo(),
                 ListaCategorias = _contenedorTrabajo.Categoria.GetListaCategorias()
             };
-            return View();
+            return View(articuloVM);
         }
 
         //[HttpPost]
